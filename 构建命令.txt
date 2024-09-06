@@ -14,4 +14,68 @@ HasInstalledPlatformInfo=true
 +InstalledPlatformConfigurations=(PlatformName="Win64", Configuration="Development", PlatformType="Game", RequiredFile="Engine\Binaries\Win64\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
 +InstalledPlatformConfigurations=(PlatformName="Win64", Configuration="Shipping", PlatformType="Game", RequiredFile="Engine\Binaries\Win64\UE4Game-Win64-Shipping.target", ProjectType="Any", bCanBeDisplayed=False)
 
+[/Script/HTML5PlatformEditor.HTML5TargetSettings]
+Compressed=False
+EnableIndexedDB=False
+EnableSIMD=False
+DeployServerPort=53501
+EnableTracing=False
+CanvasScalingMode=Aspect
+EnableMultithreading=False
+OffscreenCanvas=False
+LLVMWasmBackend=False
+
+; common browser locations - add your custom locations here
+[/Script/HTML5PlatformEditor.HTML5Browsers]
+; windows
++BrowserLauncher=(BrowserName="FF Nightly(32bit)", BrowserPath=(FilePath="C:/Program Files (x86)/Firefox Nightly/firefox.exe"))
++BrowserLauncher=(BrowserName="FF Dev(32bit)",     BrowserPath=(FilePath="C:/Program Files (x86)/Firefox Developer Edition/firefox.exe"))
++BrowserLauncher=(BrowserName="Firefox(32bit)",    BrowserPath=(FilePath="C:/Program Files (x86)/Mozilla Firefox/firefox.exe"))
++BrowserLauncher=(BrowserName="FF Nightly",        BrowserPath=(FilePath="C:/Program Files/Firefox Nightly/firefox.exe"))
++BrowserLauncher=(BrowserName="FF Dev",            BrowserPath=(FilePath="C:/Program Files/Firefox Developer Edition/firefox.exe"))
++BrowserLauncher=(BrowserName="Firefox",           BrowserPath=(FilePath="C:/Program Files/Mozilla Firefox/firefox.exe"))
+; old FF Nightly path...
++BrowserLauncher=(BrowserName="FF Nightly(32bit)", BrowserPath=(FilePath="C:/Program Files (x86)/Nightly/firefox.exe"))
++BrowserLauncher=(BrowserName="FF Nightly",        BrowserPath=(FilePath="C:/Program Files/Nightly/firefox.exe"))
+; chrome
++BrowserLauncher=(BrowserName="Chrome",         BrowserPath=(FilePath="C:/Program Files/Google/Chrome/Application/chrome.exe"))
+; Chrome Canary -- edit path to canary installation location
++BrowserLauncher=(BrowserName="Canary",            BrowserPath=(FilePath="C:/Users/your_username/AppData/Local/Google/Chrome SxS/Application/chrome.exe"))
+; Edge -- will be autodetected...
+; +BrowserLauncher=(BrowserName="Edge",           BrowserPath=(FilePath="start microsoft-edge:"))
+
+; osx
++BrowserLauncher=(BrowserName="Safari",  BrowserPath=(FilePath="/Applications/Safari.app"))
++BrowserLauncher=(BrowserName="Firefox", BrowserPath=(FilePath="/Applications/Firefox.app"))
++BrowserLauncher=(BrowserName="Chrome",  BrowserPath=(FilePath="/Applications/Google Chrome.app"))
+
+; linux
++BrowserLauncher=(BrowserName="Firefox", BrowserPath=(FilePath="/usr/bin/firefox"))
++BrowserLauncher=(BrowserName="Chrome", BrowserPath=(FilePath="/usr/bin/google-chrome"))
++BrowserLauncher=(BrowserName="Chromium", BrowserPath=(FilePath="/usr/bin/chromium-browser"))
+
+[Browser]
+bForceMessageLoop=true
+
+[/Script/HTML5Networking.WebSocketNetDriver]
+AllowPeerConnections=False
+AllowPeerVoice=False
+ConnectionTimeout=60.0
+InitialConnectTimeout=120.0
+RecentlyDisconnectedTrackingTime=180
+AckTimeout=10.0
+KeepAliveTime=20.2
+MaxClientRate=15000
+MaxInternetClientRate=10000
+RelevantTimeout=5.0
+SpawnPrioritySeconds=1.0
+ServerTravelPause=4.0
+NetServerMaxTickRate=30
+LanServerMaxTickRate=35
+WebSocketPort=8889
+NetConnectionClassName="/Script/HTML5Networking.WebSocketConnection"
+MaxPortCountToTry=512
+
+
+
 然后解压Build.rar 到\Engine\Platforms\HTML5 目录
