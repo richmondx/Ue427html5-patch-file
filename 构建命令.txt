@@ -13,3 +13,5 @@ HasInstalledPlatformInfo=true
 +InstalledPlatformConfigurations=(PlatformName="Win64", Configuration="DebugGame", PlatformType="Game", RequiredFile="Engine\Binaries\Win64\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
 +InstalledPlatformConfigurations=(PlatformName="Win64", Configuration="Development", PlatformType="Game", RequiredFile="Engine\Binaries\Win64\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
 +InstalledPlatformConfigurations=(PlatformName="Win64", Configuration="Shipping", PlatformType="Game", RequiredFile="Engine\Binaries\Win64\UE4Game-Win64-Shipping.target", ProjectType="Any", bCanBeDisplayed=False)
+
+然后解压Build.rar 到\Engine\Platforms\HTML5 目录
