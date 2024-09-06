@@ -1,1 +1,15 @@
 ./Engine/Binaries/DotNET/AutomationTool.exe BuildGraph -target="Make Installed Build Win64" -script="D:/ue427html5/ue-4.27-html5-es3/Engine/Build/InstalledEngineBuild.xml" -set:WithDDC=false -set:SignExecutables=false -set:EmbedSrcSrvInfo=false -set:GameConfigurations="Development;Shipping" -set:WithFullDebugInfo=true -set:HostPlatformEditorOnly=false -set:AnalyticsTypeOverride= -set:WithWin64=true  -set:WithHTML5=true -set:WithWin32=false -set:WithMac=false -set:WithAndroid=false -set:WithIOS=false -set:WithTVOS=false -set:WithLinux=false -set:WithLumin=false -set:WithLinuxAArch64=false -set:WithHoloLens=false -set:CompileDatasmithPlugins=false -set:VS2019=true -set:WithServer=false -set:WithClient=false
+
+完成后在BaseEngine.ini
+增加如下
+
+[InstalledPlatforms]
+HasInstalledPlatformInfo=true
++InstalledPlatformConfigurations=(PlatformName="HTML5", Configuration="DebugGame", PlatformType="Game", RequiredFile="Engine\Binaries\HTML5\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
++InstalledPlatformConfigurations=(PlatformName="HTML5", Configuration="Development", PlatformType="Game", RequiredFile="Engine\Binaries\HTML5\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
++InstalledPlatformConfigurations=(PlatformName="HTML5", Configuration="Shipping", PlatformType="Game", RequiredFile="Engine\Binaries\HTML5\UE4Game-HTML5-Shipping.target", ProjectType="Any", bCanBeDisplayed=False)
++InstalledPlatformConfigurations=(PlatformName="Win64", Configuration="Development", PlatformType="Editor", bCanBeDisplayed=False)
++InstalledPlatformConfigurations=(PlatformName="Win64", Configuration="DebugGame", PlatformType="Editor", bCanBeDisplayed=False)
++InstalledPlatformConfigurations=(PlatformName="Win64", Configuration="DebugGame", PlatformType="Game", RequiredFile="Engine\Binaries\Win64\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
++InstalledPlatformConfigurations=(PlatformName="Win64", Configuration="Development", PlatformType="Game", RequiredFile="Engine\Binaries\Win64\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
++InstalledPlatformConfigurations=(PlatformName="Win64", Configuration="Shipping", PlatformType="Game", RequiredFile="Engine\Binaries\Win64\UE4Game-Win64-Shipping.target", ProjectType="Any", bCanBeDisplayed=False)
