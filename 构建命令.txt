@@ -69,3 +69,5 @@ MaxPortCountToTry=512
 
 
 然后解压Build.rar 到\Engine\Platforms\HTML5 目录
+修改chrome flags 启用Experimental WebAssembly 和 WebAssembly Memory64
+chrome://flags/#enable-experimental-webassembly-features
